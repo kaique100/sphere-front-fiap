@@ -32,16 +32,45 @@ export default function Home() {
 
           <TabsContent value="entrar">
             <form action="" className="space-y-2">
-              <Label htmlFor="email">email</Label>
+             <div>
+             <Label htmlFor="email">email</Label>
               <Input id="email" />
+             </div>
+              <div>
               <Label htmlFor="senha">senha</Label>
               <Input id="senha" type="password" />
+              </div>
+              <div className='flex flex-col items-center w-full space-y-7'>
               <Button type="submit">entrar</Button>
+              </div>
+
             </form>
           </TabsContent>
           
           <TabsContent value="registrar">
-            <p>criar conta</p>
+          <form action="" className="space-y-2">
+              <div>
+              <Label htmlFor="nome">nome</Label>
+              <Input id="nome" />
+              </div>
+              <div>
+              <Label htmlFor="bio">bio</Label>
+              <Input id="bio"  />
+              </div>
+             <div>
+             <Label htmlFor="email">email</Label>
+              <Input id="email"  />
+             </div>
+              <div>
+              <Label htmlFor="senha">senha</Label>
+              <Input id="senha" type='password' />
+              </div>
+              <div className='flex flex-col items-center w-full space-y-7'>
+              <Button type="submit">criar conta</Button>
+
+              </div>
+
+            </form>
           </TabsContent>
         
         </Tabs>
